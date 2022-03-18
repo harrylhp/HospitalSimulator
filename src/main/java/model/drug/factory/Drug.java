@@ -17,11 +17,11 @@ public abstract class Drug implements IDrug {
         return drugName;
     }
 
-    public void setLabel(String drugLabel){
+    public void setLabel(String drugLabel) {
         this.drugLabel = drugLabel;
     }
 
-    public String getLabel(){
+    public String getLabel() {
         return drugLabel;
     }
 }
