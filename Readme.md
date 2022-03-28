@@ -1,5 +1,5 @@
 ## Quick Detail about Hospital Simulator:
-================================================
+
 Patients can have one of these states: (F Fever / H Healthy / D Diabetes / T Tuberculosis / X Dead)
 
 This is the list of available drugs: (As Aspirin / An Antibiotic / I Insulin / P Paracetamol)
@@ -39,7 +39,6 @@ Drug effects are described by the following rules:
   ➔ Paracetamol cures Fever.
   
 ## User Guide To Setup:
-================================================
 
 1.Import the project into your IDE and use Maven to build it with command line : mvn package
 
