@@ -6,38 +6,39 @@ This is the list of available drugs: (As Aspirin / An Antibiotic / I Insulin / P
 
 Drug effects are described by the following rules:
 
-  ➔ Aspirin cures Fever
+  - Aspirin cures Fever
 
-  ➔ Antibiotic cures Tuberculosis
+  - Antibiotic cures Tuberculosis
 
-  ➔ Insulin prevents diabetic subjects from dying, does not cure Diabetes
+  - Insulin prevents diabetic subjects from dying, does not cure Diabetes
 
-  ➔ Insulin mixed with Antibiotic causes Healthy people to catch Fever
+  - Insulin mixed with Antibiotic causes Healthy people to catch Fever
 
-  ➔ ParacetamolcuresFever
+  - ParacetamolcuresFever
 
-  ➔ Paracetamol kills subjects if mixed with Aspirin
+  - Paracetamol kills subjects if mixed with Aspirin
 
-  ➔ One time in a million the Flying Spaghetti Monster shows his noodly power and resurrects a Dead patient, the patient becomes Healthy
+  - One time in a million the Flying Spaghetti Monster shows his noodly power and resurrects a Dead patient, the patient becomes Healthy
 
 **Input Example:**
 
-**Case 1: **
+**Case 1:**
   
-  ➔ Input: D,D
+  - Input: D,D
 
-  ➔ Output: F:0,H:0,D:0,T:0,X:2
+  - Output: F:0,H:0,D:0,T:0,X:2
 
-  ➔ Diabetic patients die without Insulin.
+   - Diabetic patients die without Insulin.
 
-**Case 2: **
+**Case 2:**
   
-  ➔ Input: F,P
+  - Input: F,P
 
-  ➔ Output: F:0,H:1,D:0,T:0,X:2
+  - Output: F:0,H:1,D:0,T:0,X:2
 
-  ➔ Paracetamol cures Fever.
+  - Paracetamol cures Fever.
   
+
 ## User Guide To Setup:
 
 1.Import the project into your IDE and use Maven to build it with command line : mvn package
