@@ -20,8 +20,8 @@ Drug effects are described by the following rules:
 
   ➔ One time in a million the Flying Spaghetti Monster shows his noodly power and resurrects a Dead patient, the patient becomes Healthy
 
-================================================
 User Guide To Setup:
+================================================
 
 1.Import the project into your IDE and use Maven to build it with command line : mvn package
 
