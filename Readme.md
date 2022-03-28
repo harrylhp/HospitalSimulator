@@ -1,4 +1,4 @@
-Quick Detail about Hospital Simulator:
+## Quick Detail about Hospital Simulator:
 ================================================
 Patients can have one of these states: (F Fever / H Healthy / D Diabetes / T Tuberculosis / X Dead)
 
@@ -20,23 +20,25 @@ Drug effects are described by the following rules:
 
   ➔ One time in a million the Flying Spaghetti Monster shows his noodly power and resurrects a Dead patient, the patient becomes Healthy
 
-Input Example:
+**Input Example:**
 
-Case 1: 
+**Case 1: **
+  
   ➔ Input: D,D
 
   ➔ Output: F:0,H:0,D:0,T:0,X:2
 
   ➔ Diabetic patients die without Insulin.
 
-Case 2: 
+**Case 2: **
+  
   ➔ Input: F,P
 
   ➔ Output: F:0,H:1,D:0,T:0,X:2
 
   ➔ Paracetamol cures Fever.
   
-User Guide To Setup:
+## User Guide To Setup:
 ================================================
 
 1.Import the project into your IDE and use Maven to build it with command line : mvn package
