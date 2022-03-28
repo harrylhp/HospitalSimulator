@@ -6,9 +6,9 @@ This is the list of available drugs: (As Aspirin / An Antibiotic / I Insulin / P
 
 Drug effects are described by the following rules:
 
-  ➔ AspirincuresFever
+  ➔ Aspirin cures Fever
 
-  ➔ AntibioticcuresTuberculosis
+  ➔ Antibiotic cures Tuberculosis
 
   ➔ Insulin prevents diabetic subjects from dying, does not cure Diabetes
 
@@ -20,6 +20,22 @@ Drug effects are described by the following rules:
 
   ➔ One time in a million the Flying Spaghetti Monster shows his noodly power and resurrects a Dead patient, the patient becomes Healthy
 
+Input Example:
+
+Case 1: 
+  ➔ Input: D,D
+
+  ➔ Output: F:0,H:0,D:0,T:0,X:2
+
+  ➔ Diabetic patients die without Insulin.
+
+Case 2: 
+  ➔ Input: F,P
+
+  ➔ Output: F:0,H:1,D:0,T:0,X:2
+
+  ➔ Paracetamol cures Fever.
+  
 User Guide To Setup:
 ================================================
 
