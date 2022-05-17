@@ -5,20 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d999e8ad-c19f-4d54-8236-4d6f16cfd8fc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/HospitalSimulator.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_36.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HospitalSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HospitalSimulator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HospitalSimulatorMainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalSimulatorMainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/drug/Antibiotic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/drug/Antibiotic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/drug/Aspirin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/drug/Aspirin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/drug/Insulin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/drug/Insulin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/drug/Paracetamol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/drug/Paracetamol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/drug/factory/Drug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/drug/factory/Drug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/drug/factory/FactoryDrug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/drug/factory/FactoryDrug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/drug/factory/IDrug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/drug/factory/IDrug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/patient/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/patient/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/patient/PatientState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/patient/PatientState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HospitalServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HospitalServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/drug/factory/FactoryDrugTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/drug/factory/FactoryDrugTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/HospitalSimulator-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/HospitalSimulator-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HospitalServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/HospitalServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HospitalServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HospitalServiceTest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +26,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="/opt/homebrew/Cellar/maven/3.8.5/libexec" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -46,10 +53,30 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3678441" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HospitalSimulatorMainApp">
+    <configuration name="HospitalSimulatorMainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HospitalSimulatorMainApp" />
+      <module name="HospitalSimulator" />
+      <option name="PROGRAM_PARAMETERS" value="D,D,H I,P" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in HospitalSimulator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HospitalSimulator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HospitalServiceTest.testFlyingSpaghettiMonster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HospitalSimulator" />
       <option name="PACKAGE_NAME" value="" />
@@ -60,8 +87,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.HospitalSimulatorMainApp" />
+      <item itemvalue="JUnit.All in HospitalSimulator" />
+      <item itemvalue="JUnit.HospitalServiceTest.testFlyingSpaghettiMonster" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HospitalSimulatorMainApp" />
+        <item itemvalue="JUnit.All in HospitalSimulator" />
         <item itemvalue="JUnit.HospitalServiceTest.testFlyingSpaghettiMonster" />
       </list>
     </recent_temporary>
@@ -91,5 +125,8 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/HospitalSimulator$All_in_HospitalSimulator.ic" NAME="All in HospitalSimulator Coverage Results" MODIFIED="1648186572771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

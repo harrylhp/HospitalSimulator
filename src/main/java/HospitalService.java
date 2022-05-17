@@ -1,6 +1,8 @@
 import model.drug.factory.FactoryDrug;
 import model.patient.Patient;
 import model.patient.PatientState;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
@@ -17,30 +19,50 @@ public class HospitalService {
     //For result string F:#P,H:#P,D:#P,T:#P,X:#P
     private String sFinalResultPatientList = "";
 
+    //For logger
+    private final Logger logger = LoggerFactory.getLogger(HospitalService.class);
+
+    /**
+     * To perform the hospital services and print out the output
+     *
+     * @param patientStateList  : input string list patients
+     * @param drugAvailableList : input string list of available drugs
+     */
     public void performHospitalAction(String patientStateList, String drugAvailableList) {
         countPatients(processInput(patientStateList));
         checkAvailableDrugList(processInput(drugAvailableList));
-        patientsTreatment();
+
+        //1.Count initial Patent and States
         countResultPatientsEachState();
+        logger.info("Initial PatientList:");
+        logger.info(buildResultPatientString());
 
-        //Print out the result String
-        System.out.println(buildResultPatientString());
+        //2.Perform treatment
+        patientsTreatment();
 
+        //3.Count final Patent and States
+        countResultPatientsEachState();
+        logger.info("After Treatment PatientList:");
+        logger.info(buildResultPatientString());
     }
 
     /**
      * Process the input for patient state & drug to produce the String[] of states
+     *
+     * @param strInputPatient : the input patient string
      */
-    public String[] processInput(String str) {
-        if (str == null)
+    public String[] processInput(String strInputPatient) {
+        if (strInputPatient == null)
             return null;
 
         //Remove whitespace if there is any
-        return str.trim().split(",");
+        return strInputPatient.trim().split(",");
     }
 
     /**
      * Get the list of Patients from input argument
+     *
+     * @param patientsStateList : list of inputs PatientState
      */
     public void countPatients(String[] patientsStateList) {
         if (patientsStateList == null)
@@ -54,9 +76,11 @@ public class HospitalService {
         }
     }
 
-    /*
-        1.Get the list of available drugs from input argument.
-        2. Remove duplicate drugName as we only care about how many type of drugs
+    /**
+     * 1.Get the list of available drugs from input argument.
+     * 2. Remove duplicate drugName as we only care about how many type of drugs
+     *
+     * @param listOfDrugs : string list of available drugs
      */
     public void checkAvailableDrugList(String[] listOfDrugs) {
         if (listOfDrugs == null)
@@ -72,9 +96,9 @@ public class HospitalService {
         }
     }
 
-    /*
-        Count the number of patients each state
-        F:#P,H:#P,D:#P,T:#P,X:#P
+    /**
+     * Count the number of patients each state and print out as format below
+     * F:#P,H:#P,D:#P,T:#P,X:#P
      */
     public void countResultPatientsEachState() {
         initializeResultPatients();
@@ -83,7 +107,6 @@ public class HospitalService {
             return;
 
         for (Patient patient : patientsList) {
-            //Add to patientsList
             PatientState state = patient.getPatientState();
 
             switch (state) {
@@ -110,13 +133,14 @@ public class HospitalService {
      * Initialize the hashmap for (State, Count)
      */
     public void initializeResultPatients() {
-        mStates_Counts.put(PatientState.FEVER, 0);
-        mStates_Counts.put(PatientState.HEALTHY, 0);
-        mStates_Counts.put(PatientState.DIABETES, 0);
-        mStates_Counts.put(PatientState.TUBERCULOSIS, 0);
-        mStates_Counts.put(PatientState.DEAD, 0);
+        for (PatientState state : PatientState.values()) {
+            mStates_Counts.put(state, 0);
+        }
     }
 
+    /**
+     * Build the patient string as format: F:#P,H:#P,D:#P,T:#P,X:#P
+     */
     public String buildResultPatientString() {
         StringBuilder str = new StringBuilder();
         for (PatientState state : PatientState.values()) {

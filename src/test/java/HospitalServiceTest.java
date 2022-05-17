@@ -21,9 +21,8 @@ public class HospitalServiceTest {
     @DisplayName("Test With No Drug Available")
     void testWithNoDrugAvailable() {
         String patientStateList = "D,D";
-        String drugAvailableList = null;
 
-        hospitalService.performHospitalAction(patientStateList, drugAvailableList);
+        hospitalService.performHospitalAction(patientStateList, null);
         assertEquals("F:0,H:0,D:0,T:0,X:2", hospitalService.getFinalResultPatientList());
     }
 
@@ -31,9 +30,8 @@ public class HospitalServiceTest {
     @DisplayName("Test With No Drug Available With More Patients")
     void testWithNoDrugAvailableMorePatients() {
         String patientStateList = "F,F,T,D,D,X,H";
-        String drugAvailableList = null;
 
-        hospitalService.performHospitalAction(patientStateList, drugAvailableList);
+        hospitalService.performHospitalAction(patientStateList, null);
         assertEquals("F:2,H:1,D:0,T:1,X:3", hospitalService.getFinalResultPatientList());
     }
 
@@ -120,10 +118,7 @@ public class HospitalServiceTest {
     @Test
     @DisplayName("Test With No Input Argument")
     void testWithNoInputArgument() {
-        String patientStateList = null;
-        String drugAvailableList = null;
-
-        hospitalService.performHospitalAction(patientStateList, drugAvailableList);
+        hospitalService.performHospitalAction(null, null);
         assertEquals("F:0,H:0,D:0,T:0,X:0", hospitalService.getFinalResultPatientList());
     }
 
@@ -138,14 +133,15 @@ public class HospitalServiceTest {
         String drugAvailableList = "";
 
         hospitalService.performHospitalAction(patientStateList, drugAvailableList);
-        ArrayList<Patient> patientsList = new ArrayList<>();
-        patientsList = hospitalService.getPatientsList();
+        ArrayList<Patient> patientsList = hospitalService.getPatientsList();
 
         String isWorking = "";
         //Find at least 1 Healthy in 1.5 mil run-time (to be safe), it should get at least one Resurrected Patient
         for (Patient patient : patientsList) {
-            if (patient.getPatientState() == PatientState.HEALTHY)
+            if (patient.getPatientState() == PatientState.HEALTHY) {
                 isWorking = "Flying Spaghetti Monster Working";
+                break;
+            }
         }
         assertEquals("Flying Spaghetti Monster Working", isWorking);
     }
