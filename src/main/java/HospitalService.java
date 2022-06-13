@@ -44,8 +44,6 @@ public class HospitalService {
         countResultPatientsEachState();
         logger.info("After Treatment PatientList:");
         logger.info(buildResultPatientString());
-
-        System.out.println("This is the feature for Test Branch 1");
     }
 
     /**

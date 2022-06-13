@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d999e8ad-c19f-4d54-8236-4d6f16cfd8fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_36.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HospitalSimulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HospitalSimulator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HospitalSimulatorMainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HospitalSimulatorMainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HospitalServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HospitalServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/HospitalSimulator-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/HospitalSimulator-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/HospitalServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/HospitalServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-HospitalServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-HospitalServiceTest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
